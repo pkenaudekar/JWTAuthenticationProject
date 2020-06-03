@@ -1,0 +1,188 @@
+  
+  body{
+      background-color: brown;
+  }
+
+  .flex-container{
+    display: flex;
+    flex-flow: nowrap;        
+    align-items: center;
+    flex-direction: column;
+    margin: 25vh auto; 
+    padding:5px;          
+  }
+
+  .flex-container h2{
+    margin: 0px auto;         
+  }
+
+  .flex-items{
+   margin: -20px 50px;
+  }
+  
+  .button{
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 82%; 
+  }
+
+  .button:hover {
+    background-color: rgb(21, 22, 21);
+    color: white;
+  }
+
+  p{
+    font-size: x-large;
+  }
+  
+  
+
+  /*---------------------------------------registration.html--------------------------------------------------*/
+  .container{
+    box-sizing: border-box;
+  }
+
+  h2{
+    margin-left: 1vw;
+  }
+
+  [class*="col-"] {
+    float: left;
+    box-sizing: border-box;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  input[type=text], input[type=number], input[type=password]{
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=submit]#btnSave, input[type=submit]#btnLogout, input[type=submit]#btnDetails, input[type=submit]#btnLogoutAll {
+    background-color: #555555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+    width: 90%;
+    margin:0px auto;    
+  }
+
+  input[type=submit]#btnSave:hover, input[type=submit]#btnLogout:hover, input[type=submit]#btnLogoutAll:hover {
+    background-color: rgb(21, 22, 21);
+    color: white;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;    
+  }
+  
+  .col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+  }  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    
+   }
+  
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .col-25, .col-75 {
+      width: 100%;
+      margin-top: 0;
+    }
+    input[type=submit]#btnSave, input[type=submit]#btnLogout, input[type=submit]#btnLogoutAll{     
+      margin: 20px auto;      
+    }
+    h2{
+      margin-left: 8vw;
+      word-wrap: none;
+    }
+  }  
+
+  table, th, td {
+    border: 1px solid black;
+  }
+  td{
+    text-align: center;
+  }
+  
+
+  /*---------------------------------------Modal--------------------------------------------------*/
+  
+
+  /* Button used to open the contact form - fixed at the bottom of the page */
+    
+  /* The popup form - hidden by default */
+  .form-popup {      
+    text-align: center;
+    max-width: 600px;
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 37vw;
+    right:37vw;
+    border: 3px solid #f1f1f1;
+    z-index: 19;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 600px;
+    padding: 10px;
+    background-color: brown;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password], .form-container input[type=number] {
+    width: 75%;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus , .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  

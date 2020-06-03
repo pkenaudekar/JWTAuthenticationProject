@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Intro to Node, Express and MongoDB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/vanilla.js"></script>       
+        <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+    </head>
+
+    <body onload="check()">
+        <div class="grid-container">            
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">
+                <h2>ENTER DETAILS</h2>
+                <form action="/accounts" target="_self" method="post"> 
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="username">Username:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="username" name="Username" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="password">Password:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="password" name="Password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="age">Age:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" name="Age" min="1" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25"></div>
+                        <div class="col-75">
+                            <input type="submit" class="button" value="Save" id="btnSave">
+                        </div>                        
+                    </div>                                      
+                </form>
+                <form action="" target="_self" method="post" id="details">
+                    <div class="row">
+                        <div class="col-25"></div>
+                        <div class="col-75">
+                            <input type="submit" class="button" value="Details" id="btnDetails">
+                        </div>                        
+                    </div>
+                </form>
+                <form action="" target="_self" method="post" id="logout">
+                    <div class="row">
+                        <div class="col-25"></div>
+                        <div class="col-75">
+                            <input type="submit" class="button" value="Logout" id="btnLogout">
+                        </div>                        
+                    </div>
+                </form>
+                <form action="" target="_self" method="post" id="logoutall">
+                    <div class="row">
+                        <div class="col-25"></div>
+                        <div class="col-75">
+                            <input type="submit" class="button" value="Logout All" id="btnLogoutAll">
+                        </div>                        
+                    </div>
+                </form>          
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>            
+        </div> 
+    </body>
+</html>

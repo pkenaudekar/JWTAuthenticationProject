@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Intro to Node, Express and MongoDB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/vanilla.js"></script>               
+        <link rel="stylesheet" type="text/css" href="css/style.css">         
+    </head>
+
+    <body onload="showDetails()">
+        <div class="form-popup" id="myForm">
+            <form action="" class="form-container" method="PUT">
+                <h3>UPDATE YOUR DETAILS</h3>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="username">Username: </label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="modUsername" name="Username">
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="modPassword" name="Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name:</label> 
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="modName" name="Name"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="age">Age:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="modAge" name="Age" min="1" max="110">
+                    </div>
+                    <button type="submit" class="button" onclick="update()">Modify</button>
+                    <button type="submit" class="button" onclick="closeForm()">Close</button>                
+                </div>                                            
+            </form>           
+       </div>  
+       <div class="flex-container">            
+            <h2>ACCOUNTS DETAILS</h2>
+            <br><br>    
+            <div class="flex-items">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table> 
+            </div>                    
+        </div>        
+    </body>
+</html>
